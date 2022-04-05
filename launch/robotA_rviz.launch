@@ -1,0 +1,9 @@
+<launch>
+
+<arg name="gui" default="False" />
+	<param name="use_gui" value="$(arg gui)"/>
+	<param name="robotA_description" command="cat $(find swarm_mapping_localization)/urdf/swarm_robot.urdf" />
+	<node name="robotA_joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+	<node name="robotA_robot_state_publisher" pkg="state_publisher" type="robot_state_publisher" />
+
+</launch>
