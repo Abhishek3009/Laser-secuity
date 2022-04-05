@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<robot name="robotA">
+
+	<link name="robotA_base_link">
+	</link>
+
+	<link name="robotA_laser">
+	</link>
+
+	<joint name="robotA_base_link_to_laser" type="fixed">
+		<parent link="robotA_base_link"/>
+		<child link="robotA_laser"/>
+	  	<origin rpy="0.0 0.0 0.3" xyz="0.0 0.0 3.141592"/>
+	  	<axis xyz="0.0 0.0 0.0"/>
+	</joint>
+
+</robot>
